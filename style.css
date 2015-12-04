@@ -1,0 +1,296 @@
+/*
+Theme Name: Starkers HTML5
+Theme URI: http://nathanstaines.com
+Description: An HTML5 version of <a href="http://elliotjaystocks.com/starkers/">Starkers</a> by <a href="http://elliotjaystocks.com/">Elliot Jay Stocks</a> which is based on Twenty Ten.
+Version: 3.2
+Author: Nathan Staines
+Author URI: http://nathanstaines.com
+Tags: starkers, html5, naked, clean, basic
+*/
+
+@import "css/reset.css";
+@import "css/layout.css";
+
+body{
+	background: #999999;
+	color: #333333;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 0.8em;
+	line-height: 1.35em;
+}
+
+hr{
+	width: 100%;
+	float: left;
+	clear: all;
+	overflow: auto;
+
+}
+
+a{
+	color: #2199cc;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+h1, h2{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 0 20px;
+}
+
+h3{
+}
+
+strong{
+	font-weight: bold;
+}
+
+em{
+	font-style: italic;
+}
+
+#wrapper{
+	max-width: 950px;
+	margin: 0 auto;
+	background: #ffffff;
+	width: 100%;
+}
+
+#header{
+	background: #000000;
+	z-index:202;
+}
+
+#header h1{
+	background: url(images/logo.png) no-repeat;
+	text-indent: -9999em;
+	height: 87px;
+}
+
+#header h2{
+	display: none;
+}
+
+#nivoSlider{
+	width: 950px;
+	height: 265px;
+	background: #777777;
+}
+.nivoSlider{
+	height: auto !important;
+}
+
+.nivo-controlNav, .nivo-directionNav{
+	display: none;
+}
+
+#main{
+	width: 850px;
+overflow: auto;
+	width: 100%
+}
+
+#main p, #main ul, #main ol{
+	padding: 0 0 1em 0;
+}
+
+#main ol li{
+	list-style: outside;
+}
+
+#main ul {
+	margin-left:0;
+	padding-left:0;
+}
+#main ul li{
+	list-style: disc outside;
+	margin-left:1.2em;
+}
+
+article{
+	float:left;
+	width: 600px;
+	padding: 30px 30px 0 50px;
+	border-right: 1px dotted #333333;
+}
+
+.content-left{
+	width: 300px;
+	float: left;
+	padding: 0 20px 0 0;
+	margin-right:20px;
+}
+
+.content-right{
+	width: 300px;
+	float: right;
+	align: top;
+}
+
+.page-id-10 .content-left{
+	width: 200px;
+}
+.page-id-16 .content-left{
+	width: 120px;
+}
+.page-id-10 .content-right{
+	width: 400px;
+	margin-top:-2.6em;
+	margin-bottom:2em;
+}
+.page-id-16 .content-right{
+	width: 500px;
+	margin-top:-1.3em;
+	margin-bottom:1.5em;
+}
+
+aside{
+	width: 200px;
+	padding: 30px 40px 0 0;
+	color: #2199cc;
+	float:right;
+}
+
+aside a{
+	color: #000000;
+}
+
+#footer{
+	padding: 20px 50px;
+	width: 100%;
+	border-top: 1px solid #000000;
+	font-size: 12px;
+	color: #777777;
+	clear: left;
+}
+
+#comments-closed{
+	display: none;
+}
+
+.clear{
+	clear: both;
+	overflow: auto;
+}
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+	background: #333333;
+	clear: both;
+	display: block;
+	float: left;
+	margin: 0 auto;
+	width: 100%;
+	padding: 10px 50px;
+	font-weight: normal;
+}
+#access ul {
+	font-size: 14px;
+	list-style: none;
+	margin: 0 0 0 -0.8125em;
+	padding-left: 0;
+}
+#access li {
+	float: left;
+	position: relative;
+	border-right: 1px solid #2199cc;
+}
+#access a {
+	color: #2199cc;
+	display: block;
+	line-height: 1.2em;
+	padding: 0 0.7em;
+	text-decoration: none;
+}
+#access ul ul {
+	display: none;
+	float: left;
+	margin: 0;
+	position: absolute;
+	top: 1.2em;
+	left: 0;
+	width: 188px;
+	z-index: 99999;
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#access ul ul li{
+	border-right: none;
+}
+#access ul ul a {
+	background: #333333;
+	border-top: 1px solid #ffffff;
+	border-right: none;
+	color: #2199cc;
+	font-size: 13px;
+	font-weight: normal;
+	height: auto;
+	line-height: 1em;
+	padding: 5px 10px;
+	width: 128px;
+}
+#access ul ul a:hover{
+	color: #ffffff;
+	background: #333333;
+}
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus {
+}
+#access li:hover > a,
+#access a:focus {
+	color: #ffffff;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+#access .current-menu-item > a,
+#access .current-menu-ancestor > a,
+#access .current_page_item > a,
+#access .current_page_ancestor > a {
+	color: #ffffff;
+}
+#access ul ul .current-menu-item > a{
+	color: #222222;
+	background: #e0e0e0;
+}
+
+
+.mc_custom_border_hdr {
+ width:200px;
+ color:#333;
+ padding:0;
+}
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media screen and (max-width: 950px) {
+	article {
+		width: 60%;
+	}
+	aside {
+    width: 28%;
+    padding-right: 0;
+	}
+}
+@media screen and (max-width: 768px) {
+	article {
+		width: 100%;
+	}
+	aside{
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 30px;
+	}
+	#header h1 {
+    	background: url('images/logo.gif') no-repeat;
+    }
+}
